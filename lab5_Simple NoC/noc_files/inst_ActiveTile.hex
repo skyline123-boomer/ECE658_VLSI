@@ -1,0 +1,256 @@
+00
+00
+00
+00 //every 4 lines is a 32-bit MIPS instruction
+00
+00
+00 
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+F1    // the packet payload
+06    // the lower nibble is the destination in hex. [3:2] is dest row and [1:0] is dest column
+00    //
+C0 // 110000 in upper 6 bits is pseudo opcode for writing to noc
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+F2    // the packet payload
+0A    // the lower nibble is the destination in hex. [3:2] is dest row and [1:0] is dest column
+00    //
+C0 // 110000 in upper 6 bits is pseudo opcode for writing to noc
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+00
+00
+00
+00 //
+20 // get left shifted 2 positions, hence jump address is 128 (middle of inst memory)
+00 // this instruction just causes the PC to keep looping through 2nd half of imem
+00
+08 //	6'b000010 in upper bits are giving the opcode for jump
